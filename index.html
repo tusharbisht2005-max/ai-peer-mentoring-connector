@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectSphere AI - Peer Mentor Connector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🌐 ConnectSphere AI</h1>
+        <p>Your Intelligent Peer Mentoring Connector</p>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Find Your Perfect Mentor</h2>
+            <form id="find-mentor-form">
+                <div class="form-group">
+                    <label for="subject">What subject do you need help with?</label>
+                    <select id="subject" name="subject">
+                        <option value="calculus">Calculus</option>
+                        <option value="physics">Physics</option>
+                        <option value="programming">Programming (Python)</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="writing">Academic Writing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="goal">What is your main goal?</label>
+                    <select id="goal" name="goal">
+                        <option value="exam-prep">Exam Preparation</option>
+                        <option value="homework-help">Homework Help</option>
+                        <option value="concept-understanding">Understanding Core Concepts</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="style">What is your preferred learning style?</label>
+                    <select id="style" name="style">
+                        <option value="visual">Visual (diagrams, charts)</option>
+                        <option value="practical">Practical (problem-solving)</option>
+                        <option value="discussion">Discussion-based</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit-btn">Find a Mentor</button>
+            </form>
+        </div>
+
+        <div id="results-container" class="hidden">
+            <h2>Your Top Matches:</h2>
+            <div id="loader" class="hidden"></div>
+            <div id="mentor-list">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ConnectSphere AI Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
